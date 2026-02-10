@@ -1,0 +1,22 @@
+package com.mycompany.primeiroprojetopi;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author i.sales
+ */
+public class PrimeiroprojetoPI {
+
+    public static void main(String[] args) {
+      int a, b, soma;
+      Scanner leTeclado = new Scanner(System.in);
+      
+      a = leTeclado.nextInt();
+      b = leTeclado.nextInt();
+      
+      soma = a + b;
+      
+      System.out.print(soma);
+    }
+}
