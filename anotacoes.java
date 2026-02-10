@@ -1,0 +1,4 @@
+diferente !=
+
+|| = OU
+&& = E
