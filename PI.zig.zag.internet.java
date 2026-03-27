@@ -4,23 +4,21 @@ import java.util.Scanner;
 
 public class ZigZag {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
 
-        int L = sc.nextInt();
-        int C = sc.nextInt();
+        int L = teclado.nextInt();
+        int C = teclado.nextInt();
 
         int valor = 1;
 
         for (int i = 0; i < L; i++) {
             int[] linha = new int[C];
 
-            // Preenche a linha
             for (int j = 0; j < C; j++) {
                 linha[j] = valor;
                 valor++;
             }
 
-            // Imprime em zig-zag
             if (i % 2 == 0) {
                 for (int j = 0; j < C; j++) {
                     System.out.print(linha[j] + " ");
@@ -33,7 +31,5 @@ public class ZigZag {
 
             System.out.println();
         }
-
-        sc.close();
     }
 }
